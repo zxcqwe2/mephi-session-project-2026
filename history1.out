@@ -1,0 +1,24 @@
+    1  ip a
+    2  nmcli connection show 
+    3  sudo nmcli connection modify enp0s3 ipv4.method auto 
+    4  sudo nmcli connection modify enp0s3 connection.autoconnect yes
+    5  sudo nmcli connection up enp0s3 
+    6  nmcli -f NAME,DEVICE,STATE connection show 
+    7  sudo hostnamectl set-hostname mephi-2026.domain.local
+    8  hostname status
+    9  hostnamectl set-hostname mephi-2026.domain.local
+   10  hostname status
+   11  sudo hostname status
+   12  hostnamectl status
+   13  sudo nano /etc/hosts 
+   14  hostnamectl status 
+   15  sudo cat /etc/hosts 
+   16  ping 8.8.8.8
+   17  ping -c 4 8.8.8.8 > ~/ping.out
+   18  cat ~/ping.out 
+   19  ping -c 4 8.8.8.8 > ~/ping1.out
+   20  cat ~/ping1.out 
+   21  ip a
+   22  top
+   23  sudo history > ~/history1.out 
+   24  history > ~/history1.out 
